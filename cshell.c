@@ -93,7 +93,8 @@ int cshell_cd(char **args)
 */
 int cshell_exit(char **args)
 {
-  return 0;
+    printf("\033[0m");
+    return 0;
 }
 
 /**
@@ -262,7 +263,7 @@ void cshell_loop(void)
     int status;
 
     do {
-        printf("cshell> ");
+        printf("\033[33mcshell> ");
         line = cshell_read_line();
         args = cshell_split_line(line);
         status = cshell_execute(args);
