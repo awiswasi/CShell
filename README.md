@@ -1,3 +1,3 @@
 # CShell
-A simple Linux shell built with C language.
+A simple Linux kernel shell with user commands.
 Inspired by Stephen Brennan's lsh.
